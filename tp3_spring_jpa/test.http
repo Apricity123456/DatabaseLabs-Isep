@@ -1,4 +1,39 @@
 
+GET http://localhost:9090/emps
+Accept: application/json
+
+###
+
+
+POST http://localhost:9090/emps
+Content-Type: application/json
+
+{
+  "ename": "NEWTON",
+  "job": "ENGINEER",
+  "mgr": 7839,
+  "hiredate": "2025-04-06T00:00:00.000+00:00",
+  "sal": 4500,
+  "comm": 200,
+  "deptno": 10
+}
+
+###
+
+
+PUT http://localhost:9090/emps/7369
+Content-Type: application/json
+
+{
+  "ename": "SMITH_updated",
+  "job": "CLERK",
+  "mgr": 7902,
+  "hiredate": "1980-12-16T00:00:00.000+00:00",
+  "sal": 900,
+  "comm": 100,
+  "deptno": 20
+}
+
 ###
 
 
