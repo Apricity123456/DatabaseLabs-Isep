@@ -24,9 +24,10 @@ public class Main {
         String pass = "123";
 
         Connection connection = null;
+         //exercise 12 of Part2
         try {
             Class.forName("org.postgresql.Driver");
-            connection = DriverManager.getConnection(url, user, pass); // ← 这里删掉 "Connection"
+            connection = DriverManager.getConnection(url, user, pass);
             System.out.println("Bdd Connected");
 
             DAOFactory factory = new DAOFactory(connection);
@@ -47,7 +48,7 @@ public class Main {
                 ignore.printStackTrace();
             }
         }
-// Part2 exercise
+// Part2 exercise 8-11
 //        try {
 //            Class.forName("org.postgresql.Driver");
 //            connection = DriverManager.getConnection(url, user, pass);
@@ -123,13 +124,13 @@ public class Main {
 //        ResultSetMetaData rsmd = rs.getMetaData();
 //        int columnCount = rsmd.getColumnCount();
 //
-//        // 打印列名
+//
 //        for (int i = 1; i <= columnCount; i++) {
 //            System.out.print(rsmd.getColumnName(i) + "\t");
 //        }
 //        System.out.println();
 //
-//        // 打印数据
+//
 //        while (rs.next()) {
 //            for (int i = 1; i <= columnCount; i++) {
 //                System.out.print(rs.getString(i) + "\t");
