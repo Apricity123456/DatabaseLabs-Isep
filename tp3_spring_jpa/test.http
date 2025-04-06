@@ -1,0 +1,8 @@
+
+###
+
+
+DELETE http://localhost:9090/emps/7369
+
+
+GET http://localhost:9090/emps
